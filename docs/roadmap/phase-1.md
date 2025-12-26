@@ -5,7 +5,6 @@
 **Deliverable:** A running PWA with routing, database, and basic theming.
 
 - [x] **Project Initialization**
-
   - [x] Initialize Vite + React + TypeScript project
   - [x] Configure `vite-plugin-pwa` with basic manifest
   - [x] Set up Tailwind CSS 4.x with custom design tokens
@@ -13,22 +12,20 @@
   - [x] Set up folder structure (`/src/features`, `/src/components`, `/src/lib`, `/src/hooks`, `/src/stores`)
   - [x] Configure path aliases (`@/components`, `@/lib`, etc.)
 
-- [ ] **Database Layer**
-
-  - [ ] Install and configure Dexie.js
-  - [ ] Define database schema with TypeScript interfaces
-  - [ ] Create database initialization and migration utilities
-  - [ ] Implement base CRUD hooks (`useSchedules`, `useTasks`, `useContexts`)
-  - [ ] Add database seeding for development (sample data)
+- [x] **Database Layer**
+  - [x] Install and configure Dexie.js
+  - [x] Define database schema with TypeScript interfaces
+  - [x] Create database initialization and migration utilities
+  - [x] Implement base CRUD hooks (`useSchedules`, `useTasks`, `useContexts`)
+  - [x] Add database seeding for development (sample data)
 
 - [ ] **Core Infrastructure**
-
   - [ ] Set up React Router v7 with lazy loading
   - [ ] Create basic layouts (AppLayout, EmptyLayout)
   - [ ] Install and configure Zustand for UI state
   - [ ] Set up TanStack Query for sync operations
   - [ ] Create error boundary components
-  - [ ] Add toast/notification system (sonner or react-hot-toast)
+  - [ ] Add toast/notification system (sonner)
 
 - [ ] **Design System**
   - [ ] Install shadcn/ui or Radix UI components
