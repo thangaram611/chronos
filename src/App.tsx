@@ -2,7 +2,7 @@ import { Suspense, lazy } from 'react';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import AppLayout from '@/layouts/app-layout';
 import EmptyLayout from '@/layouts/empty-layout';
-import { ErrorBoundary } from '@/components/ui/error-boundary';
+import { ErrorBoundary } from '@/components/error-boundary';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const DashboardPage = lazy(() => import('@/pages/dashboard'));
