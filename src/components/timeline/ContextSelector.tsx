@@ -86,7 +86,7 @@ const ContextChip = memo(function ContextChip({
     >
       {/* Color dot */}
       <span
-        className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+        className="w-2.5 h-2.5 rounded-full shrink-0"
         style={{ backgroundColor: colorHex }}
       />
 

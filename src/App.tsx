@@ -4,6 +4,7 @@ import AppLayout from '@/layouts/app-layout';
 import EmptyLayout from '@/layouts/empty-layout';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
+import PWABadge from '@/PWABadge';
 
 const TimelinePage = lazy(() => import('@/pages/timeline'));
 const DashboardPage = lazy(() => import('@/pages/dashboard'));
@@ -46,5 +47,10 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <PWABadge />
+    </>
+  );
 }

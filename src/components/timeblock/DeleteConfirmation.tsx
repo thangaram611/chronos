@@ -36,7 +36,7 @@ export const DeleteConfirmation = memo(function DeleteConfirmation({
 }: DeleteConfirmationProps) {
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-[400px]">
+      <DialogContent className="sm:max-w-100">
         <DialogHeader>
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-destructive/10">
             <Trash2 className="h-6 w-6 text-destructive" />

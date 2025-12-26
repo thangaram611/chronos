@@ -19,9 +19,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 
-
-import PWABadge from '@/PWABadge.tsx'
-
 export default function DashboardPage() {
   const [newTaskContent, setNewTaskContent] = useState("")
 
@@ -55,7 +52,6 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-8">
       <Container className="space-y-8">
         <header className="flex items-center justify-between">
           <div>
@@ -253,7 +249,5 @@ export default function DashboardPage() {
           </div>
         </section>
       </Container>
-      <PWABadge />
-    </div>
   )
 }
