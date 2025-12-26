@@ -27,7 +27,7 @@
 - [ ] **Color & Contrast**
 
   - [ ] Audit all color combinations (4.5:1 ratio for text)
-  - [ ] Fix contrast issues in glassmorphism elements
+  - [ ] Fix contrast issues in surface elements (elevation/tonal palettes)
   - [ ] Add high-contrast mode option
   - [ ] Test with color blindness simulators
   - [ ] Ensure information isn't conveyed by color alone

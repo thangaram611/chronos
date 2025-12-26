@@ -15,7 +15,7 @@
 - [ ] **Context Integration**
 
   - [ ] Add context selector to task/block forms
-  - [ ] Apply context colors to timeline blocks (tinted glass)
+  - [ ] Apply context colors to timeline blocks (tinted surface variant)
   - [ ] Show context icon on blocks (optional toggle)
   - [ ] Create context filter on timeline (show/hide by context)
   - [ ] Add context legend on timeline screen

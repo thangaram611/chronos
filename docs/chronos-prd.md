@@ -26,7 +26,7 @@ The app leverages modern web technologies—React 19, Vite, and PWA capabilities
 - **Progressive Enhancement:** Core features work offline; sync enhances the experience when online.
 - **Data Sovereignty:** All data lives in the browser by default. Cloud Sync (Google Drive) is strictly optional and user-controlled.
 - **Mobile-First Design:** UI optimized for touch and small screens, progressively enhanced for larger viewports.
-- **Aesthetic Utility:** Glassmorphism UI with haptic feedback (where supported) to communicate state.
+- **Aesthetic Utility:** Material Design 3 (Material You) UI with haptic feedback (where supported) to communicate state.
 - **Inclusive Precision:** Accessibility (WCAG 2.1 AA) is a first-class citizen.
 
 ## 3. Functional Requirements
@@ -211,11 +211,14 @@ interface SyncState {
 
 ## 5. UI/UX Design Guidelines
 
-### 5.1 Visual Style (Glassmorphism & Mobile-First)
+### 5.1 Visual Style (Material Design 3 & Mobile-First)
 
-- **Backgrounds:** Gradient backgrounds that subtly shift based on time of day.
-- **Cards:** Frosted glass effect using `backdrop-filter: blur()` with subtle borders.
-- **Typography:** System fonts (SF Pro on iOS, Roboto on Android, -apple-system stack).
+- **Theme Strategy:** "Serene Pastel" theme using Material Design 3 tokens.
+  - **Light Mode:** Soft, airy pastel tones (Lavender primary, Mint secondary) on off-white surfaces.
+  - **Dark Mode:** Deep, muted slate/charcoal backgrounds with desaturated pastel accents to reduce eye strain.
+- **Backgrounds:** Solid surface colors or very subtle, organic mesh gradients (no heavy blurs).
+- **Cards:** Material Surface containers (Surface Container Low/High) with varying elevation levels (shadows) and rounded corners (16px-24px).
+- **Typography:** System fonts (SF Pro on iOS, Roboto on Android, -apple-system stack) following Material Type Scale.
 - **Spacing:** 8px base unit for consistent rhythm.
 - **Touch Targets:** Minimum 44x44px for all interactive elements (WCAG compliance).
 
@@ -337,7 +340,7 @@ xl: 1280px  /* Large desktop */
 
 ### Design Resources
 
-- Glassmorphism inspiration: [glassmorphism.com](https://glassmorphism.com)
+- Material Design 3 Guidelines: [m3.material.io](https://m3.material.io)
 - Icon library: [Lucide Icons](https://lucide.dev)
 - Color palettes: [Coolors.co](https://coolors.co)
 

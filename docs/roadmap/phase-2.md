@@ -15,7 +15,7 @@
 
 - [ ] **Time Block Basics**
 
-  - [ ] Design TimeBlock component with glassmorphism styling
+  - [ ] Design TimeBlock component with Material Surface styling
   - [ ] Position blocks correctly based on start/end times
   - [ ] Implement block creation modal (title, time pickers)
   - [ ] Add basic time validation (end after start, reasonable hours)

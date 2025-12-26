@@ -29,7 +29,7 @@
 
 - [x] **Design System**
   - [x] Install shadcn/ui or Radix UI components
-  - [x] Create theme configuration (colors, gradients, glassmorphism utilities)
+  - [x] Create theme configuration (colors, Material Design tokens)
   - [x] Build base components (Button, Card, Input, Dialog)
   - [x] Set up Lucide React icon system
   - [x] Create responsive container components

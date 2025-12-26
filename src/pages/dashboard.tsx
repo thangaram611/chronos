@@ -91,7 +91,7 @@ export default function DashboardPage() {
                 <Button variant="outline">Outline</Button>
                 <Button variant="ghost">Ghost</Button>
                 <Button variant="link">Link</Button>
-                <Button variant="glass" className="w-full sm:w-auto">Glass Effect</Button>
+                <Button variant="secondary" className="w-full sm:w-auto">Surface (Tonal)</Button>
                 <div className="w-full pt-2 flex gap-2 items-center">
                    <Button size="sm">Small</Button>
                    <Button size="icon"><Plus className="h-4 w-4" /></Button>
@@ -115,9 +115,9 @@ export default function DashboardPage() {
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Glassmorphism Dialog</DialogTitle>
+                      <DialogTitle>Surface Dialog</DialogTitle>
                       <DialogDescription>
-                        This dialog uses the glass-card effect on the background.
+                        This dialog floats above the rest of the UI with a shadow.
                       </DialogDescription>
                     </DialogHeader>
                     <div className="py-4">
@@ -131,15 +131,15 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
 
-            {/* Typography / Glass Card Demo */}
-            <Card className="bg-primary/10 border-primary/20">
+            {/* Typography / Material Card Demo */}
+            <Card className="bg-primary/5 border-primary/20">
               <CardHeader>
-                <CardTitle>Glass Card</CardTitle>
-                <CardDescription>This card uses the glass utility.</CardDescription>
+                <CardTitle>Surface Variant</CardTitle>
+                <CardDescription>This card uses a tinted surface.</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
-                  The background blurs whatever is behind it. In dark mode, this looks especially sleek.
+                  Material Design uses surface colors to distinguish elements.
                 </p>
               </CardContent>
               <CardFooter>

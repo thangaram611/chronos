@@ -1,23 +1,23 @@
-### Phase 14: Glassmorphism Polish & Animations (Week 19)
+### Phase 14: Material Design Polish & Animations (Week 19)
 
 **Goal:** Elevate UI to premium aesthetic with smooth micro-interactions.
 
 **Deliverable:** Stunning visual experience with delightful animations.
 
-- [ ] **Glassmorphism Refinement**
+- [ ] **Material Design Refinement**
 
-  - [ ] Fine-tune backdrop-filter blur values
-  - [ ] Add subtle gradient overlays to glass cards
-  - [ ] Implement border shimmer effects
-  - [ ] Create depth with layered glass elements
-  - [ ] Add glow effects on hover/active states
-  - [ ] Test glass effects across browsers (fallbacks for unsupported)
+  - [ ] Fine-tune surface tonal values and elevation shadows
+  - [ ] Implement state layers (hover, focus, pressed, drag)
+  - [ ] Ensure correct usage of Surface Container hierarchy
+  - [ ] Add subtle tint overlays for context differentiation
+  - [ ] Verify shape corner smoothing (superellipse)
+  - [ ] Test dark mode contrast and desaturation
 
 - [ ] **Dynamic Backgrounds**
 
-  - [ ] Create time-of-day gradient system (dawn, day, dusk, night)
-  - [ ] Implement smooth gradient transitions (every 2 hours)
-  - [ ] Add optional animated background patterns (particles, waves)
+  - [ ] Create time-of-day theme shifts (Morning Mist, Day, Dusk, Night)
+  - [ ] Implement smooth theme transitions (every 2 hours)
+  - [ ] Add optional animated background patterns (subtle grain or waves)
   - [ ] Create context-aware backgrounds (tints based on active context)
   - [ ] Add user preference for static vs. animated backgrounds
 

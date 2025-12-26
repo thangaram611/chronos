@@ -19,7 +19,7 @@
 - [Phase 11: Analytics & Gamification](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-11.md)
 - [Phase 12: Backup & Restore](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-12.md)
 - [Phase 13: Google Drive Sync](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-13.md)
-- [Phase 14: Glassmorphism Polish & Animations](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-14.md)
+- [Phase 14: Material Design Polish & Animations](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-14.md)
 - [Phase 15: Accessibility & Performance Audit](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-15.md)
 - [Phase 16: Beta Testing & Iteration](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-16.md)
 - [Phase 17: Production Launch](file:///Users/thanga-5521/Documents/projects/personal/chronos/docs/roadmap/phase-17.md)
