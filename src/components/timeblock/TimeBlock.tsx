@@ -5,6 +5,7 @@ import type { Schedule, Context } from '@/lib/db';
 import type { BlockPosition } from '@/lib/timeline';
 import { MIN_BLOCK_HEIGHT_PX, SPRING_CONFIG, TWEEN_CONFIG } from '@/lib/timeline';
 import { TimeBlockContent, TimeBlockContentMinimal } from './TimeBlockContent';
+import { Chip } from '@/components/ui/chip';
 import { Check } from 'lucide-react';
 
 interface TimeBlockProps {
@@ -142,34 +143,15 @@ export const TimeBlock = memo(
           }
         }}
       >
-        {/* Completed badge - Subtle pastel chip */}
-        {isCompleted && (
-          <div
-            className={cn(
-              'absolute z-10 pointer-events-none',
-              isMinimal ? 'top-0.5 right-0.5' : isCompact ? 'top-1 right-1' : 'top-2 right-2'
-            )}
-          >
-            <span
-              className={cn(
-                'inline-flex items-center justify-center',
-                isMinimal ? 'h-4 w-4 rounded-full' : 'gap-1 rounded-full px-2 py-0.5',
-                'bg-secondary/80 dark:bg-secondary/20',
-                'text-secondary-foreground/80 dark:text-secondary-foreground/70',
-                'border border-secondary-foreground/15 dark:border-secondary/30'
-              )}
-            >
-              <Check className={isMinimal ? 'h-2.5 w-2.5' : 'h-3 w-3'} strokeWidth={2.5} />
-              {!isMinimal && (
-                <span className="text-[10px] font-medium leading-none">done</span>
-              )}
-            </span>
-          </div>
-        )}
-
         {/* Content */}
         {isMinimal ? (
-          <TimeBlockContentMinimal title={title} isCompleted={isCompleted} />
+          <TimeBlockContentMinimal
+            title={title}
+            isCompleted={isCompleted}
+            isLocked={isLocked}
+            startTimestamp={startTimestamp}
+            endTimestamp={endTimestamp}
+          />
         ) : (
           <TimeBlockContent
             title={title}
@@ -179,6 +161,27 @@ export const TimeBlock = memo(
             compact={isCompact}
             isCompleted={isCompleted}
           />
+        )}
+
+        {/* Completed chip */}
+        {isCompleted && (
+          <div
+            className={cn(
+              'absolute z-20 pointer-events-none',
+              isMinimal ? 'top-1 right-1' : isCompact ? 'top-1.5 right-1.5' : 'top-2 right-2'
+            )}
+          >
+            <Chip 
+              variant="success" 
+              size="sm"
+              icon={<Check className="h-3 w-3" strokeWidth={2.5} />}
+              className="shadow-sm backdrop-blur-[2px]"
+            >
+              {!isMinimal && (
+                <span className="uppercase tracking-wide text-[10px]">Done</span>
+              )}
+            </Chip>
+          </div>
         )}
       </motion.div>
     );

@@ -24,10 +24,6 @@ export const ContextSelector = memo(function ContextSelector({
 }: ContextSelectorProps) {
   const contexts = useContexts();
 
-  if (!contexts || contexts.length === 0) {
-    return null;
-  }
-
   return (
     <div className={cn('space-y-2', className)}>
       <label className="text-sm font-medium text-muted-foreground">
@@ -44,7 +40,7 @@ export const ContextSelector = memo(function ContextSelector({
         />
 
         {/* Context options */}
-        {contexts.map((context) => (
+        {contexts?.map((context) => (
           <ContextChip
             key={context.id}
             name={context.name}

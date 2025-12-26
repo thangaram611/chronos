@@ -151,8 +151,8 @@ export const SwipeableTimeBlock = memo(function SwipeableTimeBlock({
         setRevealedAction('delete');
       } else {
         // Snap back to center
-        await controls.start({ x: 0, transition: SPRING_CONFIG });
         setRevealedAction(null);
+        await controls.start({ x: 0, transition: SPRING_CONFIG });
       }
 
       // Reset drag flag after a short delay to prevent click from firing
@@ -180,8 +180,8 @@ export const SwipeableTimeBlock = memo(function SwipeableTimeBlock({
    * Close revealed action
    */
   const handleCloseReveal = useCallback(async () => {
-    await controls.start({ x: 0, transition: SPRING_CONFIG });
     setRevealedAction(null);
+    await controls.start({ x: 0, transition: SPRING_CONFIG });
   }, [controls]);
 
   /**
