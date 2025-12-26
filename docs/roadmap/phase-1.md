@@ -19,13 +19,13 @@
   - [x] Implement base CRUD hooks (`useSchedules`, `useTasks`, `useContexts`)
   - [x] Add database seeding for development (sample data)
 
-- [ ] **Core Infrastructure**
-  - [ ] Set up React Router v7 with lazy loading
-  - [ ] Create basic layouts (AppLayout, EmptyLayout)
-  - [ ] Install and configure Zustand for UI state
-  - [ ] Set up TanStack Query for sync operations
-  - [ ] Create error boundary components
-  - [ ] Add toast/notification system (sonner)
+- [x] **Core Infrastructure**
+  - [x] Set up React Router v7 with lazy loading
+  - [x] Create basic layouts (AppLayout, EmptyLayout)
+  - [x] Install and configure Zustand for UI state
+  - [x] Set up TanStack Query for sync operations
+  - [x] Create error boundary components
+  - [x] Add toast/notification system (sonner)
 
 - [ ] **Design System**
   - [ ] Install shadcn/ui or Radix UI components

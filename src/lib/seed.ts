@@ -5,11 +5,17 @@ function generateId() {
   return crypto.randomUUID();
 }
 
-export async function seedDatabase() {
-  const contextCount = await db.contexts.count();
-  if (contextCount > 0) return; // Already seeded
+let isSeeding = false;
 
-  const now = Date.now();
+export async function seedDatabase() {
+  if (isSeeding) return;
+  isSeeding = true;
+
+  try {
+    const contextCount = await db.contexts.count();
+    if (contextCount > 0) return; // Already seeded
+
+    const now = Date.now();
 
   // 1. Seed Contexts
   const contexts: Context[] = [
@@ -107,4 +113,7 @@ export async function seedDatabase() {
   await db.schedules.bulkAdd(schedules);
 
   console.log('Database seeded successfully!');
+  } finally {
+    isSeeding = false;
+  }
 }
