@@ -6,33 +6,32 @@
 
 - [ ] **Timeline Foundation**
 
-  - [ ] Design Timeline component with 24-hour vertical layout
-  - [ ] Implement hourly grid lines with time labels
-  - [ ] Add "current time" indicator (red line) with auto-update
+  - [x] Design Timeline component with 24-hour vertical layout
+  - [x] Implement hourly grid lines with time labels
+  - [x] Add "current time" indicator (line) with auto-update
   - [ ] Create smooth scroll behavior with scroll-to-current-time
-  - [ ] Implement day selector (horizontal date picker)
+  - [x] Implement day selector (horizontal date picker)
   - [ ] Add "Today" quick navigation button
 
 - [ ] **Time Block Basics**
 
-  - [ ] Design TimeBlock component with Material Surface styling
-  - [ ] Position blocks correctly based on start/end times
-  - [ ] Implement block creation modal (title, time pickers)
-  - [ ] Add basic time validation (end after start, reasonable hours)
-  - [ ] Display blocks on timeline with proper z-index layering
-  - [ ] Add context color tinting to blocks
+  - [x] Design TimeBlock component with Material Surface styling
+  - [x] Position blocks correctly based on start/end times
+  - [x] Implement block creation modal (title, time pickers)
+  - [x] Add basic time validation (end after start, reasonable hours)
+  - [x] Display blocks on timeline with proper z-index layering
+  - [x] Add context color tinting to blocks
 
 - [ ] **Core Interactions**
 
-  - [ ] Implement tap-to-edit functionality
-  - [ ] Add swipe-to-delete with confirmation
-  - [ ] Create block detail view (expand on tap)
-  - [ ] Add quick actions (complete, reschedule, delete)
-  - [ ] Implement optimistic UI updates
+  - [x] Implement tap-to-edit functionality
+  - [x] Add swipe-to-delete with confirmation
+  - [x] Create block detail view (expand on tap)
+  - [x] Implement optimistic UI updates
   - [ ] Add loading states and error handling
 
 - [ ] **Responsive Timeline**
-  - [ ] Optimize timeline for mobile viewports
-  - [ ] Adjust font sizes and spacing for readability
-  - [ ] Make time blocks easily tappable (44px min height)
-  - [ ] Test on various screen sizes (320px to 768px)
+  - [x] Optimize timeline for mobile viewports
+  - [x] Adjust font sizes and spacing for readability
+  - [x] Make time blocks easily tappable (44px min height)
+  - [x] Test on various screen sizes (320px to 768px)

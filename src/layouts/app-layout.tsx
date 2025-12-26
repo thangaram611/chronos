@@ -3,12 +3,12 @@ import { Toaster } from 'sonner';
 
 export default function AppLayout() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Header/Sidebar could go here */}
-      <main className="container mx-auto p-4">
+    <div className="h-screen flex flex-col bg-background text-foreground overflow-hidden">
+      {/* Main content area */}
+      <main className="flex-1 overflow-hidden">
         <Outlet />
       </main>
-      <Toaster />
+      <Toaster position="bottom-center" />
     </div>
   );
 }

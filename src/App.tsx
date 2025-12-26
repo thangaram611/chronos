@@ -5,6 +5,7 @@ import EmptyLayout from '@/layouts/empty-layout';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
+const TimelinePage = lazy(() => import('@/pages/timeline'));
 const DashboardPage = lazy(() => import('@/pages/dashboard'));
 
 const router = createBrowserRouter([
@@ -15,7 +16,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/dashboard" replace />,
+        element: <Navigate to="/timeline" replace />,
+      },
+      {
+        path: 'timeline',
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TimelinePage />
+          </Suspense>
+        ),
       },
       {
         path: 'dashboard',

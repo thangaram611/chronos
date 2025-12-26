@@ -138,7 +138,7 @@ export default function DashboardPage() {
                 <CardDescription>This card uses a tinted surface.</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                <p className="leading-7 not-first:mt-6">
                   Material Design uses surface colors to distinguish elements.
                 </p>
               </CardContent>
@@ -176,7 +176,7 @@ export default function DashboardPage() {
                   </Button>
                 </div>
                 
-                <div className="space-y-2 max-h-[300px] overflow-y-auto pr-2">
+                <div className="space-y-2 max-h-75 overflow-y-auto pr-2">
                   {tasks?.map((task) => (
                     <div key={task.id} className="flex items-center justify-between rounded-md border p-2 text-sm bg-background/50">
                        <span className="flex items-center gap-2">
@@ -235,7 +235,7 @@ export default function DashboardPage() {
                   <div className="space-y-4">
                     {schedules?.map((sch) => (
                       <div key={sch.id} className="flex gap-4 border-l-2 pl-4" style={{ borderColor: 'hsl(var(--primary))' }}>
-                        <div className="text-xs text-muted-foreground min-w-[60px]">
+                        <div className="text-xs text-muted-foreground min-w-15">
                           {new Date(sch.startTimestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
                         </div>
                         <div>
